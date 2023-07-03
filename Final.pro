@@ -10,16 +10,17 @@ CONFIG += c++17
 
 SOURCES += \
     client.cpp \
+    loginform.cpp \
     main.cpp \
-    mainwindow.cpp \
-    server.cpp
+    mainwindow.cpp
 
 HEADERS += \
     client.h \
-    mainwindow.h \
-    server.h
+    loginform.h \
+    mainwindow.h
 
 FORMS += \
+    loginform.ui \
     mainwindow.ui
 
 # Default rules for deployment.
