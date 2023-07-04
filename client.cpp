@@ -18,6 +18,9 @@ client::client()
 
 }
 client::client(int port, char* ip){
+//    QApplication a();
+    loginForm *f= new loginForm;
+    f->show();
     // Step 1: Construct socket
     this->client_sock = socket(AF_INET, SOCK_STREAM, 0);
     // Step 2: Specify server address
@@ -35,11 +38,12 @@ client::client(int port, char* ip){
         printf("OOk\n");
     }
     printf("Enter username:(Press Enter to exit):\n");
+
     while (true)
     {
-        loginForm f;
-        f.show();
         this->buff="Hello";
+
+
         char temp[BUFF_SIZE];
         printf("Gui ne/n");
         this->bytes_sent = send(this->client_sock, this->buff, strlen(this->buff), 0); //Send message to server
