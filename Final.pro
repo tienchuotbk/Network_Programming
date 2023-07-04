@@ -12,12 +12,14 @@ SOURCES += \
     client.cpp \
     loginform.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    singleton.cpp
 
 HEADERS += \
     client.h \
     loginform.h \
-    mainwindow.h
+    mainwindow.h \
+    singleton.h
 
 FORMS += \
     loginform.ui \
